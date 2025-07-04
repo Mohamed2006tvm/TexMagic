@@ -172,7 +172,7 @@ footer p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .intro-image img:hover {
-    transform: scale(3.05);
+    transform: scale(1.05);
 }
 @media (max-width: 600px) {
     
