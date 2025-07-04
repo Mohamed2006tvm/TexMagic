@@ -1,0 +1,224 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, #2a2b29 0%, #bdbeb8 80%);
+    
+}
+
+header {
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    width: 60%;
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    border-radius: 18px;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;  
+    color: #f8ffae;
+}
+
+.header-container p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.main-container {
+    background: rgba(92, 88, 88, 0.95);
+    margin: 1rem auto;
+    padding: 0.8rem 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    text-align: center;
+    max-width: 560px;
+}
+
+.main-container h1 {
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main-container p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.button input[type="button"] {
+    background: linear-gradient(90deg, #43c6ac 0%, #f8ffae 100%);
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(67, 198, 172, 0.15);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button input[type="button"]:hover {
+    background: linear-gradient(90deg, #f8ffae 0%, #43c6ac 100%);
+    transform: translateY(-2px) scale(1.05);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+    margin-top: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+
+.social-link {
+    margin-top: 1rem;
+    
+}
+
+.social-link a {
+    color: #43c6ac;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.social-link a:hover {
+    color: #f8ffae;
+    transform: translateY(-6px) scale(1.15);
+}
+.intro {
+    color: #f8ffae;
+    font-size: 1.2rem;
+    margin: 0.5rem auto;
+    width: 57%;
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 1rem;
+}
+.intro-container {
+    flex-basis: 50%;
+    text-align: initial;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+}
+.intro-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.intro-container li {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    padding: 5px 0;
+    line-height: auto;
+}
+.intro-image {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+.intro-image img {
+    width: 70%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.intro-image img:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 600px) {
+    
+    header{
+        width: 90%;
+    }
+    .main-container {
+        padding: 1rem 0.5rem;
+        width: 80%;
+    }
+
+    .header-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-container h1 {
+        font-size: 1.2rem;
+    }
+    .intro-container {
+        flex-basis: 100%;
+    }
+    .intro-container h2 {
+        font-size: 1.3rem;
+    }
+    .intro-container li {
+        font-size: 0.9rem;
+    }
+   
+    .intro-image {
+        flex-basis: 100%;
+    }
+    .intro-image img {
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .button input[type="button"] {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+    footer {
+        width: 90%;
+    }
+    .intro{
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+
+}
